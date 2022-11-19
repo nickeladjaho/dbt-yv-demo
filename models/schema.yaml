@@ -10,7 +10,17 @@ models:
           - unique
           - not_null
       - name: first_order_date
-        description: NULL when a customer has not yet placed an order.
+        description: NULL when a customer has not yet placed an order
+      - name: most_recent_order_date
+        description: NULL when a customer has not yet placed an order
+      - name: first_name
+        description: customer forename
+      - name: last_name
+        description: customer surname
+      - name: number_of_orders
+
+
+
 
   - name: stg_customers
     description: This model cleans up customer data
